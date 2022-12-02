@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My HTML</title>
+        <meta charset="UTF-8"><!--character coding unicode(UTF-8)-->
+        <meta name="description" content="Free HTML tutorial for begineers">
+        <meta name="keywords" content="HTML, tutorial, begineers">
+        <meta name="author" content="yogesh">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--autoscale based on device-->
+       <!-- <meta http-equiv="refresh" content="3">--><!--automatically refresh after every 3 sec-->
+    </head>
+
+
+
+<!--this is comment-->
+    <body>
+    <h1 >    I like pizza</h1>
+ 
+    <hr>
+    <p>Hello<br> World!</p>
+
+    <a href = "page2.html" target="_blank">Go to page 2</a><br>
+    <!--target ="_blank/_self"-->
+    <a href = "mailto:fake123@gmail.com" target="_blank">email me</a>
+<a href="https://www.linkedin.com/in/yogeshchiluka?originalSubdomain=in">
+    <img src="img.png" height="" width="" alt="This is picture">
+</a>
+<!-- MP3, WAV, and OGG.-->
+<audio controls  muted loop src="youtube_audio.mp3" ></audio>
+<h1>Song</h1>
+<!--MP4, WebM, and Ogg-->
+<video controls  muted loop src="Video_html.mp4" width="500"></video>
+<h1>Doreamon Video</h1>
+
+
+<h1>Text Formating Tags</h1>
+<p>This is <b>Bold</b> text </p>
+<p>This is <i>italic</i> text </p>
+<p>This is <big>big</big> text </p>
+<p>This is <small>small</small> text </p>
+<p>This is <sub>Subscript</sub> text </p>
+<p>This is <sup>Superscript</sup> text </p>
+<p>This is <ins>inserted</ins> text </p>
+<p>This is <del>deleted</del> text </p>
+<p>This is <mark>marked</mark> text </p>
+
+<hr>
+
+<h1>Unorderd List</h1>
+
+<ul>
+    <li>pizza</li>
+    <li>burger</li>
+    <li>sandwitch</li>
+</ul>
+
+<h1>Orderd List</h1>
+<ol type="A">
+    <li>pizza</li>
+    <ul>
+        <li>paneer pizza</li>
+        <li>chicken pizza</li>
+    </ul>
+    <li>burger</li>
+    <li>sandwitch</li>
+</ol>
+
+
+<h1>Description List</h1>
+
+<dl>
+    <dt>HTML</dt>
+    <dd>This adds structure to a webpage</dd>
+    <dt>CSS</dt>
+    <dd>This adds stye to a web page</dd>
+    <dt>JavaScript</dt>
+    <dd>This adds functinality to a web page</dd>
+</dl>
+<hr>
+
+<h1>Store Hours</h1>
+<table bgcolor="black" width="700">
+    <tr bgcolor="grey">
+        <th width="100">Sunday</th>
+        <th width="100">Monday</th>
+        <th width="100">Tuesday</th>
+        <th width="100">Wednesday</th>
+        <th width="100">Thursday</th>
+        <th width="100">Friday</th>
+        <th width="100">Saturday</th>
+    </tr>
+    <tr bgcolor="lightgrey" align="center">
+        <td>Closed</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>Closed</td>
+
+    </tr>
+</table>
+    </br>
+<!--style to appy inline css-->
+    <h1 style="color:red;" align="center">This adds style to a webpage</h1>
+
+<div style="background-color:lightgreen; text-align: center;"">
+    <p>HTML5 is a <span style="color:darkblue;">markup language</span> used for structuring and presenting content on the World Wide Web. </p>
+    <p>It is the fifth and final major HTML version that is a World Wide Web Consortium (W3C) recommendation.</p>
+    <p>The current specification is known as the HTML Living Standard. </p>
+</div>
+
+
+<!--iframe = embed content from another source into an HTML document
+             ex. used for ads, used in many hhacking techniques-->
+
+    <iframe src="https://www.bing.com" width="750" height="200"></iframe>
+
+    <iframe src="AdmitCard.pdf" width="750" height="200"></iframe>
+
+    <iframe src="ad.html" width="750" height="200"></iframe>
+<br>
+
+
+<!--<a href="https://www.google.com"> -->
+    <a>
+        <button onclick="doSomething()" style="background-color: grey; color:white; border-radius: 5px; border-color:blue;" >Click me</button>
+    </a>
+    <p id="test">Hello</p>
+    <script>
+        function doSomething(){
+            document.getElementById("test").innerHTML = "Goodbye";   
+        }
+    </script>
+
+        <form>
+            <div>
+                <label for="fname">first name:</label>
+                <input type="text" id="fname" name="fName" placeholder="Yogesh">
+            </div>
+            <div>
+                <label for="lname">last name:</label>
+                <input type="text" id="lname" name="lName" placeholder="Chiluka">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="password" maxlength="12" required >
+            </div>
+            <div>
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" placeholder="abcd@email.com"  >
+            </div>
+            <div>
+                <label for="phone">phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="7569646516" >
+            </div>
+            <div>
+                <label for="DOB">DOB:</label>
+                <input type="date" id="DOB" name="DOB" >
+            </div>
+            <div>
+                <label for="quantity">quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+            </div>
+
+            <div>
+                <label for="title">title:</label>
+
+                <label for="Mr.">Mr.</label>
+                <input type="radio" id="Mr." name="title">
+
+                <label for="Mrs.">Mrs.</label>
+                <input type="radio" id="Mrs." name="title">
+
+                <label for="PhD.">PhD.</label>
+                <input type="radio" id="PhD." name="title">
+            </div>
+            <div>
+                    <label for="payment">payment:</label>
+                    <select type="payment" id="payment" name="payment">
+                        <option value="visa">visa</option>
+                        <option value="mastercard">mastercard</option>
+                        <option value="rupay">rupay</option>
+                    </select>
+            </div>
+            <div>
+                <label for="Select">Select:</label>
+                <input type="checkbox" id="Select" name="Select" >
+            </div>
+
+
+            <br>
+            <div>
+                <input type="reset">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+
+
+    </body>
+
+</html>
